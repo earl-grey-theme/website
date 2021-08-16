@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="/static/styles/fonts.css">
+        <link rel="stylesheet" href="/static/styles/main.css">
+        <link rel="icon" href="/static/images/favicon.png">
+        <meta name="generator" content="Racket + Pollen">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Earl Grey Specification</title>
+    </head>
+    <body>
+        <header>
+            <h1><a href="/" class="simple">Earl Grey</a></h1>
+            <p class="subtitle">
+                A gentle color scheme, for code.
+            </p>
+        </header>
+
+        <h1 class="page-title">
+            · <a href="spec.html" class="simple">Earl Grey Specification</a>
+        </h1>
+
+        <div id="content-root"><section><h2>Prelude</h2><h3>Interpreting this specification</h3><p>
+Language syntaxes and scopes will be referred to in the following manner
+throughout this document:</p><div class="syntax-spec"><div class="scope">Scope : </div><div class="spec">( ForegroundColor , BackgroundColor ) Italic, Bold</div></div><p>… where <span class="eg-italic">BackgroundColor</span>, <span class="eg-italic">Italic</span>, and <span class="eg-italic">Bold</span>
+are optional.</p><p>Throughout the document, broad ranges of syntax tokens will be referred to
+using
+<a href="https://macromates.com/manual/en/language_grammars#naming_conventions">TextMate
+Naming Conventions</a>. (See also the
+<a href="https://www.sublimetext.com/docs/scope_naming.html">Sublime Text
+documentation</a>.)</p><h3>Color Palette</h3><p>
+</p><div class="syntax-spec">Foreground: <span class="color-lozenge" style="background-color: #605A52; color: #FCFBF9; padding: 1px 4px; border-radius: 4px">#605A52</span></div><p>
+</p><div class="syntax-spec">Background: <span class="color-lozenge" style="background-color: #FCFBF9; color: #605A52; padding: 1px 4px; border-radius: 4px">#FCFBF9</span></div><p>
+</p><div class="syntax-spec">BackgroundAlt: <span class="color-lozenge" style="background-color: #F7F3EE; color: #605A52; padding: 1px 4px; border-radius: 4px">#F7F3EE</span></div><p>
+</p><div class="syntax-spec">Purple: <span class="color-lozenge" style="background-color: #83577D; color: #FCFBF9; padding: 1px 4px; border-radius: 4px">#83577D</span></div><p>
+</p><div class="syntax-spec">Blue: <span class="color-lozenge" style="background-color: #556995; color: #FCFBF9; padding: 1px 4px; border-radius: 4px">#556995</span></div><p>
+</p><div class="syntax-spec">Teal: <span class="color-lozenge" style="background-color: #477A7B; color: #FCFBF9; padding: 1px 4px; border-radius: 4px">#477A7B</span></div><p>
+</p><div class="syntax-spec">Orange: <span class="color-lozenge" style="background-color: #886A44; color: #FCFBF9; padding: 1px 4px; border-radius: 4px">#886A44</span></div><p>
+</p><div class="syntax-spec">Green: <span class="color-lozenge" style="background-color: #747B4D; color: #FCFBF9; padding: 1px 4px; border-radius: 4px">#747B4D</span></div><p>
+</p><div class="syntax-spec">Red: <span class="color-lozenge" style="background-color: #8F5652; color: #FCFBF9; padding: 1px 4px; border-radius: 4px">#8F5652</span></div><p>
+</p><div class="syntax-spec">Comment: <span class="color-lozenge" style="background-color: #AEABA6; color: #FCFBF9; padding: 1px 4px; border-radius: 4px">#AEABA6</span></div><h3>Blend Colors</h3><p>
+</p><div class="syntax-spec">Grey1: <span class="color-lozenge" style="background-color: #ECEBE8; color: #605A52; padding: 1px 4px; border-radius: 4px">#ECEBE8</span></div><p>
+</p><div class="syntax-spec">Grey2: <span class="color-lozenge" style="background-color: #DDDBD8; color: #605A52; padding: 1px 4px; border-radius: 4px">#DDDBD8</span></div><p>
+</p><div class="syntax-spec">Grey3: <span class="color-lozenge" style="background-color: #CDCBC7; color: #605A52; padding: 1px 4px; border-radius: 4px">#CDCBC7</span></div><p>
+</p><div class="syntax-spec">Grey4: <span class="color-lozenge" style="background-color: #BEBBB6; color: #FCFBF9; padding: 1px 4px; border-radius: 4px">#BEBBB6</span></div><p>
+</p><div class="syntax-spec">Grey5: <span class="color-lozenge" style="background-color: #AEABA6; color: #FCFBF9; padding: 1px 4px; border-radius: 4px">#AEABA6</span></div><p>
+</p><div class="syntax-spec">Grey6: <span class="color-lozenge" style="background-color: #9E9A95; color: #FCFBF9; padding: 1px 4px; border-radius: 4px">#9E9A95</span></div><p>
+</p><div class="syntax-spec">Grey7: <span class="color-lozenge" style="background-color: #8F8A84; color: #FCFBF9; padding: 1px 4px; border-radius: 4px">#8F8A84</span></div><p>
+</p><div class="syntax-spec">Grey8: <span class="color-lozenge" style="background-color: #7F7A73; color: #FCFBF9; padding: 1px 4px; border-radius: 4px">#7F7A73</span></div><p>
+</p><div class="syntax-spec">Grey9: <span class="color-lozenge" style="background-color: #706A63; color: #FCFBF9; padding: 1px 4px; border-radius: 4px">#706A63</span></div><div class="syntax-spec">Purple1: <span class="color-lozenge" style="background-color: #F0EBED; color: #605A52; padding: 1px 4px; border-radius: 4px">#F0EBED</span></div><p>
+</p><div class="syntax-spec">Purple2: <span class="color-lozenge" style="background-color: #E4DAE0; color: #605A52; padding: 1px 4px; border-radius: 4px">#E4DAE0</span></div><p>
+</p><div class="syntax-spec">Purple3: <span class="color-lozenge" style="background-color: #D8CAD4; color: #605A52; padding: 1px 4px; border-radius: 4px">#D8CAD4</span></div><p>
+</p><div class="syntax-spec">Purple4: <span class="color-lozenge" style="background-color: #CCB9C7; color: #FCFBF9; padding: 1px 4px; border-radius: 4px">#CCB9C7</span></div><p>
+</p><div class="syntax-spec">Purple5: <span class="color-lozenge" style="background-color: #C0A9BB; color: #FCFBF9; padding: 1px 4px; border-radius: 4px">#C0A9BB</span></div><p>
+</p><div class="syntax-spec">Purple6: <span class="color-lozenge" style="background-color: #B399AF; color: #FCFBF9; padding: 1px 4px; border-radius: 4px">#B399AF</span></div><p>
+</p><div class="syntax-spec">Purple7: <span class="color-lozenge" style="background-color: #A788A2; color: #FCFBF9; padding: 1px 4px; border-radius: 4px">#A788A2</span></div><p>
+</p><div class="syntax-spec">Purple8: <span class="color-lozenge" style="background-color: #9B7896; color: #FCFBF9; padding: 1px 4px; border-radius: 4px">#9B7896</span></div><p>
+</p><div class="syntax-spec">Purple9: <span class="color-lozenge" style="background-color: #8F6789; color: #FCFBF9; padding: 1px 4px; border-radius: 4px">#8F6789</span></div><div class="syntax-spec">Blue1: <span class="color-lozenge" style="background-color: #EBECEF; color: #605A52; padding: 1px 4px; border-radius: 4px">#EBECEF</span></div><p>
+</p><div class="syntax-spec">Blue2: <span class="color-lozenge" style="background-color: #DBDEE5; color: #605A52; padding: 1px 4px; border-radius: 4px">#DBDEE5</span></div><p>
+</p><div class="syntax-spec">Blue3: <span class="color-lozenge" style="background-color: #CACFDB; color: #605A52; padding: 1px 4px; border-radius: 4px">#CACFDB</span></div><p>
+</p><div class="syntax-spec">Blue4: <span class="color-lozenge" style="background-color: #B9C1D1; color: #FCFBF9; padding: 1px 4px; border-radius: 4px">#B9C1D1</span></div><p>
+</p><div class="syntax-spec">Blue5: <span class="color-lozenge" style="background-color: #A9B2C7; color: #FCFBF9; padding: 1px 4px; border-radius: 4px">#A9B2C7</span></div><p>
+</p><div class="syntax-spec">Blue6: <span class="color-lozenge" style="background-color: #98A3BD; color: #FCFBF9; padding: 1px 4px; border-radius: 4px">#98A3BD</span></div><p>
+</p><div class="syntax-spec">Blue7: <span class="color-lozenge" style="background-color: #8795B3; color: #FCFBF9; padding: 1px 4px; border-radius: 4px">#8795B3</span></div><p>
+</p><div class="syntax-spec">Blue8: <span class="color-lozenge" style="background-color: #7686A9; color: #FCFBF9; padding: 1px 4px; border-radius: 4px">#7686A9</span></div><p>
+</p><div class="syntax-spec">Blue9: <span class="color-lozenge" style="background-color: #66789F; color: #FCFBF9; padding: 1px 4px; border-radius: 4px">#66789F</span></div><div class="syntax-spec">Teal1: <span class="color-lozenge" style="background-color: #EAEEEC; color: #605A52; padding: 1px 4px; border-radius: 4px">#EAEEEC</span></div><p>
+</p><div class="syntax-spec">Teal2: <span class="color-lozenge" style="background-color: #D8E1E0; color: #605A52; padding: 1px 4px; border-radius: 4px">#D8E1E0</span></div><p>
+</p><div class="syntax-spec">Teal3: <span class="color-lozenge" style="background-color: #C6D4D3; color: #605A52; padding: 1px 4px; border-radius: 4px">#C6D4D3</span></div><p>
+</p><div class="syntax-spec">Teal4: <span class="color-lozenge" style="background-color: #B4C7C7; color: #FCFBF9; padding: 1px 4px; border-radius: 4px">#B4C7C7</span></div><p>
+</p><div class="syntax-spec">Teal5: <span class="color-lozenge" style="background-color: #A2BBBA; color: #FCFBF9; padding: 1px 4px; border-radius: 4px">#A2BBBA</span></div><p>
+</p><div class="syntax-spec">Teal6: <span class="color-lozenge" style="background-color: #8FAEAD; color: #FCFBF9; padding: 1px 4px; border-radius: 4px">#8FAEAD</span></div><p>
+</p><div class="syntax-spec">Teal7: <span class="color-lozenge" style="background-color: #7DA1A1; color: #FCFBF9; padding: 1px 4px; border-radius: 4px">#7DA1A1</span></div><p>
+</p><div class="syntax-spec">Teal8: <span class="color-lozenge" style="background-color: #6B9494; color: #FCFBF9; padding: 1px 4px; border-radius: 4px">#6B9494</span></div><p>
+</p><div class="syntax-spec">Teal9: <span class="color-lozenge" style="background-color: #598788; color: #FCFBF9; padding: 1px 4px; border-radius: 4px">#598788</span></div><div class="syntax-spec">Orange1: <span class="color-lozenge" style="background-color: #F0EDE7; color: #605A52; padding: 1px 4px; border-radius: 4px">#F0EDE7</span></div><p>
+</p><div class="syntax-spec">Orange2: <span class="color-lozenge" style="background-color: #E5DED5; color: #605A52; padding: 1px 4px; border-radius: 4px">#E5DED5</span></div><p>
+</p><div class="syntax-spec">Orange3: <span class="color-lozenge" style="background-color: #D9D0C3; color: #605A52; padding: 1px 4px; border-radius: 4px">#D9D0C3</span></div><p>
+</p><div class="syntax-spec">Orange4: <span class="color-lozenge" style="background-color: #CEC1B1; color: #FCFBF9; padding: 1px 4px; border-radius: 4px">#CEC1B1</span></div><p>
+</p><div class="syntax-spec">Orange5: <span class="color-lozenge" style="background-color: #C2B39F; color: #FCFBF9; padding: 1px 4px; border-radius: 4px">#C2B39F</span></div><p>
+</p><div class="syntax-spec">Orange6: <span class="color-lozenge" style="background-color: #B6A48C; color: #FCFBF9; padding: 1px 4px; border-radius: 4px">#B6A48C</span></div><p>
+</p><div class="syntax-spec">Orange7: <span class="color-lozenge" style="background-color: #AB967A; color: #FCFBF9; padding: 1px 4px; border-radius: 4px">#AB967A</span></div><p>
+</p><div class="syntax-spec">Orange8: <span class="color-lozenge" style="background-color: #9F8768; color: #FCFBF9; padding: 1px 4px; border-radius: 4px">#9F8768</span></div><p>
+</p><div class="syntax-spec">Orange9: <span class="color-lozenge" style="background-color: #947956; color: #FCFBF9; padding: 1px 4px; border-radius: 4px">#947956</span></div><div class="syntax-spec">Green1: <span class="color-lozenge" style="background-color: #EEEEE8; color: #605A52; padding: 1px 4px; border-radius: 4px">#EEEEE8</span></div><p>
+</p><div class="syntax-spec">Green2: <span class="color-lozenge" style="background-color: #E1E1D7; color: #605A52; padding: 1px 4px; border-radius: 4px">#E1E1D7</span></div><p>
+</p><div class="syntax-spec">Green3: <span class="color-lozenge" style="background-color: #D3D5C5; color: #605A52; padding: 1px 4px; border-radius: 4px">#D3D5C5</span></div><p>
+</p><div class="syntax-spec">Green4: <span class="color-lozenge" style="background-color: #C6C8B4; color: #FCFBF9; padding: 1px 4px; border-radius: 4px">#C6C8B4</span></div><p>
+</p><div class="syntax-spec">Green5: <span class="color-lozenge" style="background-color: #B8BBA3; color: #FCFBF9; padding: 1px 4px; border-radius: 4px">#B8BBA3</span></div><p>
+</p><div class="syntax-spec">Green6: <span class="color-lozenge" style="background-color: #AAAE92; color: #FCFBF9; padding: 1px 4px; border-radius: 4px">#AAAE92</span></div><p>
+</p><div class="syntax-spec">Green7: <span class="color-lozenge" style="background-color: #9DA181; color: #FCFBF9; padding: 1px 4px; border-radius: 4px">#9DA181</span></div><p>
+</p><div class="syntax-spec">Green8: <span class="color-lozenge" style="background-color: #8F956F; color: #FCFBF9; padding: 1px 4px; border-radius: 4px">#8F956F</span></div><p>
+</p><div class="syntax-spec">Green9: <span class="color-lozenge" style="background-color: #82885E; color: #FCFBF9; padding: 1px 4px; border-radius: 4px">#82885E</span></div><div class="syntax-spec">Red1: <span class="color-lozenge" style="background-color: #F1EBE8; color: #605A52; padding: 1px 4px; border-radius: 4px">#F1EBE8</span></div><p>
+</p><div class="syntax-spec">Red2: <span class="color-lozenge" style="background-color: #E6DAD8; color: #605A52; padding: 1px 4px; border-radius: 4px">#E6DAD8</span></div><p>
+</p><div class="syntax-spec">Red3: <span class="color-lozenge" style="background-color: #DBCAC7; color: #605A52; padding: 1px 4px; border-radius: 4px">#DBCAC7</span></div><p>
+</p><div class="syntax-spec">Red4: <span class="color-lozenge" style="background-color: #D0B9B6; color: #FCFBF9; padding: 1px 4px; border-radius: 4px">#D0B9B6</span></div><p>
+</p><div class="syntax-spec">Red5: <span class="color-lozenge" style="background-color: #C6A9A6; color: #FCFBF9; padding: 1px 4px; border-radius: 4px">#C6A9A6</span></div><p>
+</p><div class="syntax-spec">Red6: <span class="color-lozenge" style="background-color: #BB9895; color: #FCFBF9; padding: 1px 4px; border-radius: 4px">#BB9895</span></div><p>
+</p><div class="syntax-spec">Red7: <span class="color-lozenge" style="background-color: #B08884; color: #FCFBF9; padding: 1px 4px; border-radius: 4px">#B08884</span></div><p>
+</p><div class="syntax-spec">Red8: <span class="color-lozenge" style="background-color: #A57773; color: #FCFBF9; padding: 1px 4px; border-radius: 4px">#A57773</span></div><p>
+</p><div class="syntax-spec">Red9: <span class="color-lozenge" style="background-color: #9A6763; color: #FCFBF9; padding: 1px 4px; border-radius: 4px">#9A6763</span></div></section><section><h2>General</h2><div class="syntax-spec"><div class="scope">Text : </div><div class="spec">( Foreground , Background )</div></div><p>
+</p><div class="syntax-spec"><div class="scope">Source : </div><div class="spec">( Foreground , Background )</div></div></section><section><h2>Comment</h2><div class="syntax-spec"><div class="scope">Comment : </div><div class="spec">( Comment ) Italic</div></div></section><section><h2>Constant</h2><div class="syntax-spec"><div class="scope">Constant : </div><div class="spec">( Teal )</div></div><p>
+</p><div class="syntax-spec"><div class="scope">Constant.Character.Escape : </div><div class="spec">( Teal )</div></div></section><section><h2>Entity</h2><div class="syntax-spec"><div class="scope">Entity.Name : </div><div class="spec">( Foreground ) Italic</div></div><p>
+</p><div class="syntax-spec"><div class="scope">Entity.Name.Class : </div><div class="spec">( Foreground ) Italic</div></div><p>
+</p><div class="syntax-spec"><div class="scope">Entity.Name.Function : </div><div class="spec">( Foreground ) Italic</div></div><p>
+</p><div class="syntax-spec"><div class="scope">Entity.Name.Label : </div><div class="spec">( Orange ) Italic</div></div><p>
+</p><div class="syntax-spec"><div class="scope">Entity.Name.Section : </div><div class="spec">( Purple )</div></div><p>
+</p><div class="syntax-spec"><div class="scope">Entity.Name.Tag : </div><div class="spec">( Purple )</div></div><p>
+</p><div class="syntax-spec"><div class="scope">Entity.Other.Attribute-Name : </div><div class="spec">( Blue )</div></div><p>
+</p><div class="syntax-spec"><div class="scope">Entity.Other.InheritedClass : </div><div class="spec">( Foreground ) Italic</div></div></section><section><h2>Invalid</h2><div class="syntax-spec"><div class="scope">Invalid : </div><div class="spec">( Red )</div></div><p>
+</p><div class="syntax-spec"><div class="scope">Invalid.Illegal : </div><div class="spec">( Background , Red )</div></div><p>
+</p><div class="syntax-spec"><div class="scope">Invalid.Deprecated : </div><div class="spec">( Background , Red )</div></div></section><section><h2>Keyword</h2><div class="syntax-spec"><div class="scope">Keyword : </div><div class="spec">( Purple )</div></div><p>
+</p><div class="syntax-spec"><div class="scope">Keyword.Operator : </div><div class="spec">( Foreground )</div></div></section><section><h2>Markup</h2><div class="syntax-spec"><div class="scope">Markup : </div><div class="spec">( Foreground )</div></div><p>
+</p><div class="syntax-spec"><div class="scope">Markup.Bold : </div><div class="spec">( Foreground ) Bold</div></div><p>
+</p><div class="syntax-spec"><div class="scope">Markup.Heading : </div><div class="spec">( Purple ) Bold</div></div><p>
+</p><div class="syntax-spec"><div class="scope">Markup.Italic : </div><div class="spec">( Foreground ) Italic</div></div><p>
+</p><div class="syntax-spec"><div class="scope">Markup.Link.Text : </div><div class="spec">( Teal )</div></div><p>
+</p><div class="syntax-spec"><div class="scope">Markup.Link.Url : </div><div class="spec">( Blue )</div></div><p>
+</p><div class="syntax-spec"><div class="scope">Markup.List : </div><div class="spec">( Foreground )</div></div><p>
+</p><div class="syntax-spec"><div class="scope">Markup.Quote : </div><div class="spec">( Orange )</div></div><p>
+</p><div class="syntax-spec"><div class="scope">Markup.Raw : </div><div class="spec">( Orange )</div></div></section><section><h2>Meta</h2><div class="syntax-spec"><div class="scope">Meta.ObjectLiteral.Key : </div><div class="spec">( Foreground ) Italic</div></div><p>
+</p><div class="syntax-spec"><div class="scope">Meta.Preprocessor : </div><div class="spec">( Orange )</div></div><p>
+</p><div class="syntax-spec"><div class="scope">Meta.Interpolation : </div><div class="spec">( Foreground )</div></div><p>
+</p><div class="syntax-spec"><div class="scope">Meta.Interpolation.Begin : </div><div class="spec">( Orange )</div></div><p>
+</p><div class="syntax-spec"><div class="scope">Meta.Interpolation.End : </div><div class="spec">( Orange )</div></div></section><section><h2>Punctuation</h2><div class="syntax-spec"><div class="scope">Punctuation : </div><div class="spec">( Foreground )</div></div><p>
+</p><div class="syntax-spec"><div class="scope">Punctuation.Definition.Variable : </div><div class="spec">( Teal )</div></div><p>
+</p><div class="syntax-spec"><div class="scope">Punctuation.Separator.Continuation : </div><div class="spec">( Orange )</div></div></section><section><h2>Storage</h2><div class="syntax-spec"><div class="scope">Storage : </div><div class="spec">( Purple )</div></div><p>
+</p><div class="syntax-spec"><div class="scope">Storage.Type : </div><div class="spec">( Purple )</div></div><p>
+</p><div class="syntax-spec"><div class="scope">Storage.Modifier : </div><div class="spec">( Purple ) Italic</div></div></section><section><h2>String</h2><div class="syntax-spec"><div class="scope">String : </div><div class="spec">( Green )</div></div><p>
+</p><div class="syntax-spec"><div class="scope">String.Regexp : </div><div class="spec">( Orange )</div></div></section><section><h2>Support</h2><div class="syntax-spec"><div class="scope">Support.Function : </div><div class="spec">( Foreground ) Italic</div></div><p>
+</p><div class="syntax-spec"><div class="scope">Support.Class : </div><div class="spec">( Foreground ) Italic</div></div><p>
+</p><div class="syntax-spec"><div class="scope">Support.Type : </div><div class="spec">( Foreground ) Italic</div></div><p>
+</p><div class="syntax-spec"><div class="scope">Support.Module : </div><div class="spec">( Foreground ) Italic</div></div><p>
+</p><div class="syntax-spec"><div class="scope">Support.Constant : </div><div class="spec">( Teal )</div></div><p>
+</p><div class="syntax-spec"><div class="scope">Support.Variable : </div><div class="spec">( Blue )</div></div></section><section><h2>Variable</h2><div class="syntax-spec"><div class="scope">Variable : </div><div class="spec">( Blue )</div></div><p>
+</p><div class="syntax-spec"><div class="scope">Variable.Function : </div><div class="spec">( Foreground ) Italic</div></div><p>
+</p><div class="syntax-spec"><div class="scope">Variable.Language : </div><div class="spec">( Purple )</div></div><p>
+</p><div class="syntax-spec"><div class="scope">Variable.Other : </div><div class="spec">( Blue )</div></div><p>
+</p><div class="syntax-spec"><div class="scope">Variable.Parameter : </div><div class="spec">( Blue )</div></div></section></div>
+
+        <p>
+            <ul></ul>
+        </p>
+
+
+
+    <!-- Build time: 2021-08-16T09:25:21 -->
+    </body>
+</html>
