@@ -40,16 +40,14 @@ should be colored purple (<span class="color-lozenge" style="background-color: #
     dance()
     sleep()</pre></section><section><h2>Use blue for variables</h2><p>
 Where possible, variables should be colored blue (<span class="color-lozenge" style="background-color: #556995; color: #FCFBF9; padding: 1px 4px; border-radius: 4px">#556995</span>).
-This should also apply to function parameters.</p><p>Example:</p><pre><span style="color: #83577D">const</span> <span style="color: #556995">name</span> = getName()</pre></section><section><h2>Use italics to emphasise important elements</h2><p>Many important syntax elements (such as function and class names, and
-dictionary keys) should be styled with <eg/italics>italics</eg/italics>,
+This should also apply to function parameters.</p><p>Example:</p><pre><span style="color: #83577D">const</span> <span style="color: #556995">name</span> = getName()</pre></section><section><h2>Use italics for computation</h2><p>Names of computational units, such as classes, methods, and functions,
+should be styled with <eg/italics>italics</eg/italics>,
 rather than a particular color.</p><p>In rare cases, italics can be combined with a color.</p><p>Example:</p><pre><p><span style="color: #83577D">class</span> <span class="eg-italic">Person</span> {
   <span class="eg-italic">constructor(name)</span> {
+    <span style="color: #83577D">const</span> <span style="color: #556995">upperCase</span> = name.<span class="eg-italic">toUpperCase</span>()
     ...
   }
-}</p><p>Account.<span class="eg-italic">create</span>({
-  <span class="eg-italic">username:</span> <span style="color: #747B4D">“Alice”</span>,
-  <span class="eg-italic">admin:</span> <span style="color: #477A7B">true</span>
-})</p></pre></section><section><h2>Use teal for numbers and language constants</h2><p>Number literals, and language constants such as <span style="color: #477A7B">true</span>,
+}</p><p><span style="color: #83577D">const</span> <span style="color: #556995">person</span> = <span style="color: #83577D">new</span> <span class="eg-italic">Person</span>(<span style="color: #747B4D">“Alice”</span>)</p></pre></section><section><h2>Use teal for numbers and language constants</h2><p>Number literals, and language constants such as <span style="color: #477A7B">true</span>,
 <span style="color: #477A7B">false</span>, and <span style="color: #477A7B">null</span> should be highlighted in
 Teal (<span class="color-lozenge" style="background-color: #477A7B; color: #FCFBF9; padding: 1px 4px; border-radius: 4px">#477A7B</span>)</p><p>Example:</p><pre>server.start({
   <span class="eg-italic">port:</span> <span style="color: #477A7B">8091</span>,
@@ -82,6 +80,6 @@ editor and language combination.</p></section></div>
 
 
 
-    <!-- Build time: 2021-08-16T14:27:52 -->
+    <!-- Build time: 2021-08-17T17:22:11 -->
     </body>
 </html>
