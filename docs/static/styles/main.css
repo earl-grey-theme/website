@@ -44,6 +44,12 @@ h3 {
     font-style: italic;
 }
 
+/* Code */
+pre, code {
+    font-family: "Recursive Mono SemiCasual";
+    font-size: 0.82rem;
+}
+
 /* Site Header */
 header {
     margin-bottom: 1.4rem;
@@ -149,6 +155,7 @@ img {
 }
 .color-block code {
     font-size: 0.78rem;
+    color: #FCFBF9
 }
 
 /* Colored Elements */
@@ -165,13 +172,6 @@ img {
 
 .eg-orange {
     color: #886A44;
-}
-
-/* Code */
-pre, code {
-    font-family: "Recursive Mono SemiCasual";
-    font-size: 0.82rem;
-    color: #605A52;
 }
 
 /* Spec */
